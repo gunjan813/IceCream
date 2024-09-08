@@ -1,0 +1,218 @@
+:root{
+    --btn-color: hsl(182, 81%, 58%);
+    --back-colo: #f9faff;
+    --bs-dyellow: #bb97c9;
+    --colo4: #15100a;
+    --colo5: #C6C6C6;
+    --bs-yellow:hsl(330, 87%, 59%);
+   
+}
+*{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+*::selection {
+    color: #ffff;
+    background: var(--btn-color);
+  }
+  
+.hero{
+    background-image: url("../images/Background/banner_bg.jpg");
+    background-size:cover;
+    background-position: center; 
+    height: 110vh;
+}
+.herosection h1 {
+    font-size: 400%;
+}
+
+.sec1 h1{
+    font-weight: 600 ;
+}
+.sec1 h6{
+    font-size: 16px;
+    font-weight:300;
+}
+.sec1 p{
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 500px;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+}
+.sec1 a{
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    width: 170px;
+    height: 50px;
+    color: white;
+    background-color: var(--btn-color);
+    align-items: center;    
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+}
+.sec1 a:hover{
+    background: #16cfc2;
+}
+
+
+
+.image{
+    left: 30px;
+    bottom: 30px;
+}
+.img-div{
+    outline: 5px solid #c12626; 
+}
+
+.primary-color {
+    color: #ec5598;
+}
+
+.relative {
+    position: relative;
+
+  } 
+  
+  #about #absolute {
+    position: absolute;
+    top: 790px;
+    left: 120px;
+   
+  }
+   
+ .absolute1 {
+    padding: 40px 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 48px;
+    left: 238px;
+    display: flex;
+
+  }
+
+  @keyframes jump {
+    0%   {transform: translate3d(0,5%,0) scale3d(1,1,1);}
+  }
+
+ .jump {
+    transform-origin: 50% 50%;
+    animation: jump 2s linear alternate infinite;
+  }
+  .main-btn{
+
+    display:inline-block;
+    border-radius:50px;
+    transition: all .4px ease-in-out;
+    padding: 10px 27px;
+    color: var(--bs-white);
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-color: var(--bs-yellow);
+   
+}
+
+.main-btn:hover {
+  box-shadow: none;
+  color: rgb(163, 46, 46);
+  background-color:var(--bs-dyellow) ;
+}
+
+.menu h4{
+    color: white;
+    font-family: var(--font);
+    font-size: 22px;
+    font-weight: 600;
+}
+.menu h5{
+    font-family: var(--fontP);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colo4);
+}
+.menu p{
+    color: var(--colo5);
+    font-family: var(--fontP);
+    font-size: 16px;   
+}
+.menu-separator,.bord{
+    border-bottom: 1px dotted var(--colo4);
+    flex-grow: 1;
+    align-self: center;
+    margin: 0 10px;
+}
+
+
+.sec4{
+   
+    background-image:linear-gradient(to right, #a92d65, #a1d4e7);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec6{
+    background-color:var(--back-colo);
+    background-image: url(../images/Background/pattern.jpg);
+}
+.but{    
+    color: var(--btn-color);
+    display:flex;
+    display: flex;
+    justify-content: center; 
+    background-color: #fff;  
+    border-radius: 10px; 
+    box-shadow: 0px 10px 30px 0px rgba(153,153,153,0.2);
+    overflow: hidden;
+}
+
+.fig{
+    width: 90%;
+    margin: 0 auto;
+}
+.thumb{
+    overflow: hidden;
+}
+.fig img{
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease 0s;
+}
+.fig:hover img{
+    transform: scale(1.1);
+}
+.fig:hover figcaption h4{
+    color: var(--btn-color);
+}
+.fig figcaption h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.tenth{
+    background-color: black;
+    color: white;
+    width: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+footer{
+    background-image:linear-gradient(to right, #f857a6, #ff5858); 
+}
+
+  
+
+@media(min-width: 768px){
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    
+}
